@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container & Spacing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.Container -->
+    <!-- https://tailwindcss.com/docs/container -->
+    <h1>1. Container</h1>
+    <div class="container mx-auto bg-gray-200 p-4">
+      This is a centered container with padding
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 2.Margin and Padding -->
+    <!-- https://tailwindcss.com/docs/margin -->
+    <!-- https://tailwindcss.com/docs/padding -->
+    <h1>2. Margin and Padding</h1>
+    <div class="bg-purple-300 p-6 mb-4">This div has padding and margin</div>
+    <div class="bg-purple-500 p-10 mt-4">
+      This div has more padding and margin
+    </div>
+    <div class="bg-teal-700 px-2 py-2 mx-8 my-8 text-white">
+      Margin and padding using x and y axes
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 3. Arbitrary Spacing -->
+    <!-- https://tailwindcss.com/docs/arbitrary-values -->
+    <h1>3. Arbitrary Spacing</h1>
+    <div class="bg-blue-500 p-4 m-4">This div has padding and margin</div>
+    <div class="bg-green-500 p-[1rem] m-[2rem]">
+      This div has arbitrary padding and margin
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 4.Space between X & Y -->
+    <!-- https://tailwindcss.com/docs/space -->
+    <h1>4.1 Space between X</h1>
+    <div class="flex space-x-4">
+      <div class="bg-red-500 p-4">Item 1</div>
+      <div class="bg-blue-500 p-4">Item 2</div>
+      <div class="bg-green-500 p-4">Item 3</div>
+    </div>
+    <br>
+
+    <h1>4.2 Space between Y</h1>
+    <div class="flex flex-col space-y-4 mt-4">  
+      <div class="bg-red-500 p-4">Item 1</div>
+      <div class="bg-blue-500 p-4">Item 2</div>
+      <div class="bg-green-500 p-4">Item 3</div>
+
+    <br />
+    <hr />
+    <br />
+  </body>
+</html>
