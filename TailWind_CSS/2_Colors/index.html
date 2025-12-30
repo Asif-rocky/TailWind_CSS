@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
+    <title>Tailwind CSS Colors</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
       body {
@@ -65,5 +65,18 @@
     <input type="checkbox" checked class="accent-purple-500" />
     <input type="range" />
     <input type="range" class="accent-green-500" />
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- 5.Arbitrary Colors -->
+    <!-- https://tailwindcss.com/docs/arbitrary-values -->
+    <!-- Arbitrary means using custom colors directly in the class -->
+    <h1>5.Arbitrary Colors</h1>
+    <div class="bg-[#ff0000] text-white p-4 mb-4">This is a red background</div>
+    <div class="bg-[#00ff00] text-black p-4 mb-4">
+      This is a green background
+    </div>
   </body>
 </html>
