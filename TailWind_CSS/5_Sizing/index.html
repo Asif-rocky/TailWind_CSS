@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sizing</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-20">
+  <!-- Width -->
+  <!-- https://tailwindcss.com/docs/width -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Width</h2>
+    <!-- w-1 means 0.25rem (4px) -->
+    <div class="w-32 h-16 bg-blue-500 text-white flex items-center justify-center mb-2">w-32</div>
+    <div class="w-1/2 h-16 bg-green-500 text-white flex items-center justify-center mb-2">w-1/2</div>
+    <div class="w-full h-16 bg-red-500 text-white flex items-center justify-center">w-full</div>
+  </div>
+
+  <!-- Percentage -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Percentage Sizing</h2>
+    <div class="w-64 h-32 bg-gray-200 relative">
+      <div class="w-1/2 h-1/2 bg-purple-500 text-white flex items-center justify-center absolute top-0 left-0">
+        50% Width & Height
+      </div>
+    </div>
+  </div>
+
+  <!-- Height -->
+  <!-- https://tailwindcss.com/docs/height -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Height</h2>
+    <!-- h-16 means 4rem (64px) -->
+    <div class="flex gap-4">
+      <div class="w-32 h-16 bg-blue-500 text-white flex items-center justify-center mb-2">h-16</div>
+      <div class="w-32 h-32 bg-blue-500 text-white flex items-center justify-center mb-2">h-32</div>
+      <div class="w-32 h-1/2 bg-green-500 text-white flex items-center justify-center mb-2">h-1/2</div>
+      <div class="w-32 h-full bg-red-500 text-white flex items-center justify-center">h-full</div>
+    </div>
+  </div>
+
+  <!-- Max-Height and Min-Height -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Max-Height and Min-Height</h2>
+    <div class="max-h-32 min-h-16 bg-orange-500 text-white p-4 overflow-auto">
+      This box has a maximum height of 8rem (128px) and a minimum height of 4rem (64px). Add more content here to see
+      how it behaves when the content exceeds the max height.
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  <!-- Min-Width and Max-Width -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Min-Width and Max-Width</h2>
+    <div class="min-w-[200px] max-w-[400px] bg-yellow-500 text-white p-4">
+      This box has a minimum width of 200px and a maximum width of 400px. Resize the window to see the effect.
+    </div>
+  </div>
+
+  <!-- Width & Height of Viewport -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Width & Height of Viewport</h2>
+    <div class="w-screen bg-pink-500 text-white flex items-center justify-center">
+      w-screen
+    </div>
+    <!-- <div class="h-screen bg-indigo-500 text-white flex items-center justify-center mt-4">
+      h-screen
+    </div> -->
+  </div>
+
+  <!-- Arbitrary Sizing -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Arbitrary Sizing</h2>
+    <div class="w-[150px] h-[75px] bg-teal-500 text-white flex items-center justify-center">
+      w-[150px] h-[75px]
+    </div>
+  </div>
+
+
+</body>
+
+</html>
