@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background & Shadows</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-20">
+  <!-- Background Images -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Background Images</h2>
+    <div
+      class="w-64 h-40 bg-[url('https://images.unsplash.com/photo-1766961588342-5fb90ee7e073?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2NXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center rounded-lg shadow-lg">
+    </div>
+  </div>
+
+  <!-- Box Shadows -->
+  <div>
+    <h2 class="text-2xl font-bold mb-4">Box Shadows</h2>
+    <div class="w-64 h-40 bg-white rounded-lg shadow-xl shadow-teal-500 flex items-center justify-center">
+      <span class="text-gray-700">Shadow Example</span>
+    </div>
+  </div>
+
+  <!-- Gradients -->
+  <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+  <div class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">Gradients</h2>
+    <!-- bg-gradient-to-r means background gradient from left to right -->
+    <div
+      class="w-64 h-40 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-lg shadow-lg flex items-center justify-center">
+      <span class="text-white font-semibold">Gradient Background</span>
+    </div>
+  </div>
+</body>
+
+</html>
