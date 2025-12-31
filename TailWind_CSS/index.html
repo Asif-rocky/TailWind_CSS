@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Position & Display</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-20">
+  <!-- Position -->
+  <!-- https://tailwindcss.com/docs/position -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Position</h2>
+    <div class="relative h-32 w-64 bg-gray-200">
+      <div class="absolute top-7 left-4 bg-blue-500 text-white p-2">Absolute Positioned</div>
+      <div class="relative bg-red-500 text-white p-2 mt-8">Relative Positioned</div>
+    </div>
+  </div>
+
+  <!-- Display -->
+  <!-- https://tailwindcss.com/docs/display -->
+  <div>
+    <h2 class="text-2xl font-bold mb-4">Display</h2>
+    <div class="mb-4">
+      <div class="block bg-green-500 text-white p-2 mb-2">Block Element</div>
+
+      <!-- Difference between inline & inline block is that inline-block elements respect width and height properties, while inline elements do not. Inline elements only take up as much width as necessary and do not start on a new line. -->
+
+      <div class="inline-block bg-yellow-500 text-white w-1/2 p-2 mb-2">Inline-Block Element</div>
+      <div class="inline bg-purple-500 text-white p-2">Inline Element</div>
+    </div>
+    <div class="flex bg-gray-300 p-4">
+      <div class="bg-pink-500 text-white p-2 mr-2">Flex Item 1</div>
+      <div class="bg-pink-700 text-white p-2">Flex Item 2</div>
+    </div>
+  </div>
+</body>
+
+</html>
