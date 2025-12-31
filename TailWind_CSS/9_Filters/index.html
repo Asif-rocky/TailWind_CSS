@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filters</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-20">
+  <!-- Contrast -->
+  <!-- Contrast refers to the difference in luminance or color that makes an object distinguishable -->
+  <!-- Luminance is the intensity of light emitted from a surface -->
+  <!-- https://tailwindcss.com/docs/contrast -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Contrast</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 contrast-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 contrast-50 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 contrast-100 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 contrast-150 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 contrast-200"></div>
+    </div>
+  </div>
+
+  <!-- Brightness -->
+  <!-- Brightness refers to the perceived intensity of light emitted from a surface -->
+  <!-- https://tailwindcss.com/docs/brightness -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Brightness</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 brightness-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 brightness-50 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 brightness-100 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 brightness-150 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 brightness-200"></div>
+    </div>
+  </div>
+
+  <!-- Grayscale -->
+  <!-- Grayscale converts the colors of an image to shades of gray -->
+  <!-- https://tailwindcss.com/docs/grayscale -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Grayscale</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 grayscale-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 grayscale mb-2"></div>
+    </div>
+  </div>
+
+  <!-- Hue Rotate -->
+  <!-- Hue rotation changes the colors of an image by rotating the color wheel -->
+  <!-- https://tailwindcss.com/docs/hue-rotate -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Hue Rotate</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-60 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-120 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-180 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-240 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 hue-rotate-300"></div>
+    </div>
+  </div>
+
+  <!-- Saturate -->
+  <!-- Saturation adjusts the intensity of colors in an image -->
+  <!-- https://tailwindcss.com/docs/saturate -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Saturate</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 saturate-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 saturate-50 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 saturate-100 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 saturate-150 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 saturate-200"></div>
+    </div>
+  </div>
+
+  <!-- Blur -->
+  <!-- Blur applies a Gaussian blur to an element -->
+  <!-- https://tailwindcss.com/docs/blur -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Blur</h2>
+    <div class="flex space-x-4">
+      <div class="w-32 h-32 bg-blue-500 blur-0 mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur-sm mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur-md mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur-lg mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur-xl mb-2"></div>
+      <div class="w-32 h-32 bg-blue-500 blur-2xl"></div>
+    </div>
+  </div>
+
+  <!-- Saturation, Hue & Brightness Understanding -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-bold mb-4">Saturation, Hue & Brightness Understanding</h2>
+    <img src="Images/Color_Understanding.jpg" alt="Filters Example" class="w-96 h-auto border" />
+  </div>
+
+
+</body>
+
+</html>
