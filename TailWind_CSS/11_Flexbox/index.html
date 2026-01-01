@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-20">
+  <!-- Display Flexbox -->
+  <h2 class="text-2xl font-bold mb-4">Flex box</h2>
+  <div class="flex border-2 border-black p-4 space-x-4">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-green-500 text-white p-4">Item 2</div>
+  </div>
+
+  <!-- Flex Direction -->
+  <h2 class="text-2xl font-bold my-4">Flex Direction</h2>
+  <div class="flex flex-col border-2 border-black p-4 space-y-4">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-green-500 text-white p-4">Item 2</div>
+  </div>
+
+  <!-- Justify content -->
+  <h2 class="text-2xl font-bold my-4">Justify Content</h2>
+  <div class="flex justify-between border-2 border-black p-4">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-green-500 text-white p-4">Item 2</div>
+  </div>
+
+  <!-- Order -->
+  <h2 class="text-2xl font-bold my-4">Order</h2>
+  <div class="flex border-2 border-black p-4 space-x-4">
+    <div class="order-2 bg-blue-500 text-white p-4">Item 1</div>
+    <div class="order-1 bg-green-500 text-white p-4">Item 2</div>
+  </div>
+
+  <!-- Grow and Shrink -->
+  <h2 class="text-2xl font-bold my-4">Grow and Shrink</h2>
+  <div class="flex border-2 border-black p-4 space-x-4">
+    <div class="flex-grow bg-blue-500 text-white p-4">Item 1 (grows)</div>
+    <div class="flex-shrink bg-green-500 text-white p-4 w-48">Item 2 (shrinks)</div>
+  </div>
+</body>
+
+</html>
